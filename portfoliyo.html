@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    .container{
+        display: flex;
+        border: px solid black;
+        width: fit-content;
+        height: 400px;
+        margin-left: 300px;
+        background-color: beige;
+        margin-top: 100px;
+        box-shadow: 10px 10px;
+        border-radius: 10px;
+    }
+    .card1{
+        width: 400px;
+        height: 400px;
+        background-color: white;
+        border-radius: 10px;
+        text-align: center;
+    }
+    .card2{
+        width: 400px;
+        height: 400px;
+        background-color: orange;
+        border-radius: 10px;
+        text-align: center;
+    }
+    .card3{
+        margin-top: 50px;
+        font-size: 30px;
+        color: blue;
+    }
+    .card1 button:hover{
+        transform: scale(1.5);
+        border: 1px solid green;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .container:hover{
+        transform: scale(1.5);
+    }
+    .card2 img:hover{
+        transform: rotate(180deg);
+    }
+    .box1{
+    width: auto;
+    height: fit-content;
+    position: relative;
+    background-color: deeppink;
+    border: 1px solid deeppink;
+}
+.box1 nav{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    justify-content: center;
+    position: sticky;
+    
+
+}
+.box1 a{
+    text-decoration: none;
+    color: white; 
+    font-size: 20px;
+    transition: all linear ease-in;
+}
+.box1 a:hover{
+    
+    color: lime;
+    transform: scale(1.2);
+    border: 1px solid white;
+    border-bottom: 15px;
+    border-radius: 10px;
+   background-color: black;
+
+}
+.box1:hover{
+    transform: scale(1);
+}
+ @media screen and (max-width:1024px) {
+        .container{
+            display: inline-block;
+            margin-left: 100px;
+        }
+        .card2{
+           border: 1px solid black;
+
+        }
+        .box1{
+   position: none;
+    width: fit-content;
+    height: fit-content;
+    align-items: center;
+    }
+   
+.box1 nav{
+    display: block;
+     width: 800px;
+    justify-content: center;
+    align-items: center;
+   text-align: center;
+    position: none;
+
+}
+.box1 a{
+    font-size: 20px;
+}
+    }
+    
+</style>
+<body style="background-color: blue;">
+        <div class="box1">
+        <nav>
+            <a href="" style="font-size: 50px;color: yellow;">ABISHEK</a>
+            <a href="./index.html">HOME</a>
+            <a href="./portfoliyo.html">PORTFOLIO</a>
+            <a href="./service.html">SERVICE</a>
+            <a href="./blog.html">BLOG</a>
+            <a href="./CONTACT US.html">CONTACT US</a>
+        </nav>
+        
+    </div>
+    <div class="container">
+        <div class="card1">
+            <h1 style="color: coral;">front end Developer</h1>
+            <h1>Hello My name is Abishek</h1>
+            <p style="color: rgba(0, 0, 0, 0.63);">Short text details about you, what 
+                you do or your professional career.You can add more information on the about page</p>            
+             <button style="color: white;background-color: orange;padding: 5px 40px;margin-left: 20px;margin-top: 20px;">Projects</button>
+             <button style="color: black;background-color: orange;padding: 5px 40px;margin-top: 20px;">HIRE ME </button>
+            <a href="./ABISHEK RESUME.docx"><button style="font-size: 20px;color: white;background-color: blue;padding: 10px 20px;margin-top: 70px;"><a href="./ABISHEK RESUME.docx" style="color: white;text-decoration: none;">Download CV</button></a>
+            </div>
+            <div class="card2">
+             <img src="./WhatsApp Image 2025-06-02 at 11.58.07_ce95fa44.jpg" style="height: 250px;width: 250px;;border-radius: 50%;padding: 5px 0px;">
+             <div class="card3">
+            <a href=""><i class="fa-brands fa-linkedin" style="padding: 0px 10px;"></i></a>
+            <a href=""> <i class="fa-brands fa-square-instagram" style="padding: 0px 10px;"></i></a>
+           <a href="">  <i class="fa-brands fa-square-facebook" style="padding: 0px 10px;"></i></a>
+             <a href=""><i class="fa-brands fa-square-whatsapp" style="padding: 0px 10px;"></i></a>
+            <a href=""> <i class="fa-brands fa-square-twitter"style="padding: 0px 10px;"></i></a>
+             </div>
+            </div>
+
+
+
+    </div>
+    
+</body>
+</html>

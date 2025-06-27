@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog page</title>
+</head>
+<style>
+    .container{
+        display: flex;
+        gap: 30px;
+        margin-top: 20px;
+
+    }
+    .card{
+        height: 500px;
+        width: 350px;
+        border: 1px solid black;
+        text-align: center;
+        box-shadow: 10px 10px rgba(231, 224, 224, 0.685);
+        margin-left: 50px;
+        border-radius: 10px;
+        transition: all 2s linear;
+    }
+    .card:hover{
+         transform: scale(1.2);
+         cursor: pointer;
+    }
+    .button{
+        text-align: center;
+        margin-top: 20px;
+    }
+    @media  screen and (max-width:618px) {
+        .container{
+            display: block;
+           column-gap: 20px;
+        }
+        .img{
+           width: 600px; 
+           margin-left: 50px;
+        }
+    }
+</style>
+<body style="background-color:white;">
+    <div class="img" style="background-image: url(./programming-1873854_640.png);background-repeat: no-repeat;background-size: cover;background-position: center;height: 400px;width: auto;text-align: center;">
+        <span style="color: orange; font-size: 60px;font-weight: 800;">My</span><span style="color: white;font-size: 60px;font-weight: 800;text-decoration: underline white;">Blog</span>
+    <p style="color: white;">this is my Blog using for the my create the card designs.</p></div>
+        <div class="container">
+           <div class="card">
+            <button style="padding: 20px 40px;text-align: center; background-color: orange;color: white;border: 1px solid orange;">JUNE 1</button>
+            <img src="https://cdn.pixabay.com/photo/2019/04/28/15/13/pen-4163403_1280.jpg" style="height: 300px;width: 350px;" >
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur labore enim placeat ut? Explicabo nostrum cum quidem corporis assumenda voluptatibus ab inventore quaerat ipsam fuga.</p>
+           </div>
+           <div class="card">
+            <button style="padding: 20px 40px;text-align: center; background-color: orange;color: white;border: 1px solid orange;">JUNE 1</button>
+            <img src="./ai-generated-8375934_640.jpg" style="height: 300px;width: 350px;" >
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur labore enim placeat ut? Explicabo nostrum cum quidem corporis assumenda voluptatibus ab inventore quaerat ipsam fuga.</p>
+           </div>
+           <div class="card">
+            <button style="padding: 20px 40px;text-align: center; background-color: orange;color: white;border: 1px solid orange;">JUNE 1</button>
+            <img src="./notebook-1840276_640.jpg" style="height: 300px;width: 350px;" >
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur labore enim placeat ut? Explicabo nostrum cum quidem corporis assumenda voluptatibus ab inventore quaerat ipsam fuga.</p>
+           </div>
+        </div>
+        <div class="button">
+            <button style="background-color: black;color: white;padding: 20px 40px;border: 1px solid;border-radius: 10px;">SEE MORE</button>
+            </div>
+        </body>
+
+</html>

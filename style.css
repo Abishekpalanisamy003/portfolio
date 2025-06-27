@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.box1{
+    width: auto;
+    height: 50px;
+    position: relative;
+    background-color: deeppink;
+    border: 1px solid black;
+}
+.box1 nav{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    justify-content: center;
+    position: sticky;
+    
+
+}
+.box1 a{
+    text-decoration: none;
+    color: white; 
+    font-size: 20px;
+    transition: all linear ease-in;
+}
+.box1 a:hover{
+    
+    color: lime;
+    transform: scale(1.2);
+    border: 1px solid white;
+    border-bottom: 15px;
+    border-radius: 10px;
+   background-color: black;
+
+}
+.box1:hover{
+    transform: scale(1);
+}
+.box2{
+    color: white;
+    padding-top: 250px;
+    margin-left: 100px;
+    font-size: 10px
+}
+.box2 h1{
+    transition: all 2s linear;
+}
+.box2 h1:hover{
+    transform: translatex(200px);
+}
+
+
+.box3{
+    display: flex;
+    float: right;
+    margin-right: 300px;
+    margin-top: 200px;
+    animation-name: move;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: 2;
+
+}
+.box3:hover{
+    transform: scale(1.5);
+}
+@keyframes move{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translatey(-100px) rotate(360deg);
+    }
+}
+@media screen and (max-width:814px) and (min-width:240px) 
+{
+    .box1{
+   position: none;
+    width: fit-content;
+    height: fit-content;
+    align-items: center;
+    }
+   
+.box1 nav{
+    display: block;
+     width: 800px;
+    justify-content: center;
+    align-items: center;
+   text-align: center;
+    position: none;
+
+}
+.box1 a{
+    font-size: 20px;
+}
+.box3{
+  display: block;
+  margin-right: 0px; 
+  padding-left: 200px;   
+}
+
+}

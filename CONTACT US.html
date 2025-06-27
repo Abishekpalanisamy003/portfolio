@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<style>
+    .parent{
+        margin-top: 100px;
+        width: auto;
+        height: 500px;
+        text-align: center;
+    }
+
+   .parent input{
+    padding-right: 600px;
+    height: 70px;
+    padding-left: 50px;
+    font-size: 20px;
+    }
+    .parent button{
+        padding: 20px 50px;
+        background-color: rgba(255, 68, 0, 0.753);
+        border: 1PX solid white;
+        border-radius: 10PX;
+        font-size: 20px;
+    }
+    .box{
+        text-align: center;
+    }
+    .call{
+       display: flex;
+       justify-content: space-between;
+       padding: 0PX 50PX;
+       align-items: center;
+       height: 100px;
+       width: auto;
+       border: 1px solid white;
+       box-shadow: 30px 30px deepskyblue;
+    }
+    .call button{
+        height: 50px;
+        width: 150px;
+        background-color: orangered;
+        border: 1PX solid white;
+        border-radius: 10PX;
+       color: white;
+        font-size: 20px;
+    }
+    .box1{
+    width: auto;
+    height: 50px;
+    position: relative;
+    background-color: deeppink;
+    border: 1px solid black;
+}
+.box1 nav{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    justify-content: center;
+    position: sticky;
+    
+
+}
+.box1 a{
+    text-decoration: none;
+    color: white; 
+    font-size: 20px;
+    transition: all linear ease-in;
+}
+.box1 a:hover{
+    
+    color: lime;
+    transform: scale(1.2);
+    border: 1px solid white;
+    border-bottom: 15px;
+    border-radius: 10px;
+   background-color: black;
+
+}
+.box1:hover{
+    transform: scale(1);
+}
+    @media  screen and (max-width:350px) {
+       .call{
+        display: block;
+        text-align: center;
+        height: 200px;
+        margin-left: 300px;
+        width: 300px;
+        justify-content: center; 
+        border: none;
+       } 
+    }
+
+    
+    
+
+</style>
+<body style="background-color: deepskyblue;">
+    <div class="box1">
+        <nav>
+            <a href="" style="font-size: 50px;color: yellow;">ABISHEK</a>
+            <a href="./index.html">HOME</a>
+            <a href="./portfoliyo.html">PORTFOLIO</a>
+            <a href="./service.html">SERVICE</a>
+            <a href="./blog.html">BLOG</a>
+            <a href="./CONTACT US.html">CONTACT US</a>
+        </nav>
+        
+    </div>
+    <div class="box">
+    <span style="color: orange;font-size: 40px;font-weight: 800;">My</span>&nbsp;<span style="color: rgba(0, 0, 0, 0.801);font-size: 40px;font-weight: 800;text-decoration: underline;">Contact</span><br>
+    </div> 
+    <div class="parent">
+    <input type="text" placeholder="your name"><br><br>
+     <input type="email" placeholder="your email"><br><br>
+     <input type="text" placeholder="your number"><br><br>
+     <input type="text" placeholder="Message" style="height: 120PX;"><br><br>
+     <button style="background-color: orange;color: white;">Sent Now </button>
+     </div>
+     <div class="call">
+     <h1 style="color:red;">HIRE ME FOR YOUR PROJECTS</h1>
+     <button>Call Now</button>
+     </div>
+</body>
+</html>
