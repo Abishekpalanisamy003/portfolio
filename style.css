@@ -75,7 +75,7 @@
     }
 }
 @media screen and (max-width:814px) and (min-width:240px) 
-{
+{          
     .box1{
    position: none;
     width: fit-content;
